@@ -1,51 +1,40 @@
-footer {
-    position: absolute;
-    height: 10%;
-    min-height: 110px;
-    max-height: 130px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-footer .footer {
-    height: 100%;
-    padding-left: 5rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-
-    background-color: #000;
+.footer_texts {
+    padding-left: 0rem;
     list-style-type: none;
-    line-height: 200%;
-    font-size: 0.6rem;
-    margin: 0px;
+    font-size: 0.8rem;
+    margin: 0;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-footer .adress_bg {
-    color: #ddd;
-    border-bottom: 0.0020833333333333rem solid #333;
-
-}
-
-footer .copy_bg {
-    color: #aaa;
-}
-
-footer .phone_bg {
+.phone_bg {
     color: #fff;
     font-size: 0.875rem;
 }
 
-footer a {
-    outline: 0;
+.adress_bg {
+    color: #ddd;
+    border-bottom: 0.0020833333333333rem solid #333;
+}
+
+.copy_bg {
+    margin-top: 0.3em;
+    color: #aaa;
+}
+
+#footer_fragment {
+    height: 100%;
+    width: 100%
+}
+
+#footer_texts {
+    background-color: #000;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    margin-top: 0.1em;
+}
+
+a {
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 0.3rem;
-    padding-bottom: 0.5rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 0.1rem;
 }

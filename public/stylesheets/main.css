@@ -1,101 +1,34 @@
 body {
-    font-family: Ginger, Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    line-height: 28px;
-    letter-spacing: -.01em;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
 header {
-    height: 15%;
+    width: 100%;
+    height: 10%;
 }
 
 nav {
-    background-color: transparent;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    width: 85%;
     height: 5%;
+    float: left;
 }
 
-nav li {
-    display: inline-block;
-    padding: 0.5rem;
+main {
+    width: 85%;
+    height: 75%;
+    float: left;
 }
 
-
-nav a {
-    outline: 0;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    letter-spacing: 0.1rem;
+footer {
+    width: 100%;
+    height: 10%;
+    float: left;
 }
 
-#profile-image {
-    height: 300px;
-    width: auto;
-    float: right;
-}
-
-h1 {
-    font-size: 1.3rem;
-    line-height: 2rem;
-}
-
-
-#head_title {
-    font-size: 5rem;
-    text-align: center;
-    line-height: 3rem;
-    letter-spacing: 2rem;
-}
-
-
-.wrapper {
-    padding: 1% 10%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-#typed1,
-#typed2 {
-    font-family: 나눔고딕;
-    font-size: 1.1rem;
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
+aside {
+    width: 15%;
+    height: 80%;
+    float: left;
 }
