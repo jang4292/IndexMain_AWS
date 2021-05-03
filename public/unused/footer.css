@@ -1,0 +1,40 @@
+/*.footer_texts {*/
+    /*padding-left: 0rem;*/
+    /*list-style-type: none;*/
+    /*font-size: 0.8rem;*/
+    /*margin: 0;*/
+    /*font-family: 'Nanum Gothic', sans-serif;*/
+/*}*/
+
+.phone_bg {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.adress_bg {
+    color: #ddd;
+    border-bottom: 0.0020833333333333rem solid #333;
+}
+
+.copy_bg {
+    margin-top: 0.3em;
+    color: #aaa;
+}
+
+#footer_fragment {
+    height: 100%;
+    width: 100%
+}
+
+#footer_texts {
+    background-color: #000;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    margin-top: 0.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
