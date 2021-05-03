@@ -1,40 +1,82 @@
+#footer_section {
+    width: 100%;
+    background-color: #000;
+}
+
 .footer_texts {
-    padding-left: 0rem;
-    list-style-type: none;
-    font-size: 0.8rem;
+    width: 100%;
     margin: 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 
 .phone_bg {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
 }
 
 .adress_bg {
     color: #ddd;
+    font-size: 1.1rem;
     border-bottom: 0.0020833333333333rem solid #333;
 }
 
 .copy_bg {
-    margin-top: 0.3em;
+    margin-top: 0.3rem;
     color: #aaa;
-}
-
-#footer_fragment {
-    height: 100%;
-    width: 100%
-}
-
-#footer_texts {
-    background-color: #000;
-    padding-top: 0.15em;
-    padding-bottom: 0.15em;
-    margin-top: 0.1em;
+    font-size: 1.1rem;
 }
 
 a {
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1920px) {
+    .phone_bg {
+        font-size: 0.7rem;
+    }
+
+    .adress_bg {
+        font-size: 0.9rem;
+        border-bottom: 0.0015rem solid #333;
+    }
+
+    .copy_bg {
+        margin-top: 0.25em;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .phone_bg {
+        font-size: 0.5rem;
+    }
+
+    .adress_bg {
+        font-size: 0.7rem;
+        border-bottom: 0.001rem solid #333;
+    }
+
+    .copy_bg {
+        margin-top: 0.2em;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .phone_bg {
+        font-size: 0.3rem;
+    }
+
+    .adress_bg {
+        font-size: 0.5rem;
+        border-bottom: 0.0005rem solid #333;
+    }
+
+    .copy_bg {
+        margin-top: 0.15em;
+        font-size: 0.7rem;
+    }
 }
