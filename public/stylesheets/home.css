@@ -1,0 +1,40 @@
+#profile-image {
+    height: 30rem;
+    width: auto;
+}
+
+#profile-title {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (max-width: 1920px) {
+    #profile-image {
+        height: 25rem;
+        width: auto;
+    }
+    #profile-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #profile-image {
+        height: 20rem;
+        width: auto;
+    }
+    #profile-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #profile-image {
+        width: 100%;
+        height: auto;
+    }
+    #profile-title {
+        font-size: 1rem;
+    }
+}
