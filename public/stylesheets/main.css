@@ -16,3 +16,9 @@ main {
     width: 100%;
     background-color: black;
 }
+
+@media screen and (max-width: 768px) {
+    #container.active {
+        display: none;
+    }
+}

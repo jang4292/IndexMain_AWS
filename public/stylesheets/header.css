@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    font-size: 1.3rem;
     color: var(--text--color);
 }
 
@@ -18,7 +19,7 @@ a {
 }
 
 .navigation__logo {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--text--color);
 }
 
@@ -33,7 +34,7 @@ a {
 }
 
 .navigation__menu li {
-    padding: 8px 12px;
+    padding: 4px 8px;
 }
 
 .navigation__menu li:hover {
@@ -43,14 +44,22 @@ a {
 
 .navigation__icons {
     list-style: none;
-    color: var(--text--color);
     display: flex;
     padding-left: 0;
 }
 
-.navigation__icons li {
-    padding: 8px 12px;
-    font-size: 24px
+.navigation__icons li a {
+    padding: 4px 8px;
+
+}
+
+.navigation__icons li i {
+    color: var(--text--color);
+}
+
+.navigation__icons li a:hover {
+    background-color: var(--accent--color);
+    border-radius: 4px;
 }
 
 .navigation__toggle_button {
@@ -84,6 +93,8 @@ a {
         display: none;
         justify-content: center;
         width: 100%;
+        padding-inline-start: 0;
+        margin:0;
     }
 
     .navigation__toggle_button {

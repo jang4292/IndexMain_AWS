@@ -27,12 +27,6 @@
     font-size: 1.1rem;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
-}
-
 @media screen and (max-width: 1920px) {
     .phone_bg {
         font-size: 0.7rem;
