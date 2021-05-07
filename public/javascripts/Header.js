@@ -1,14 +1,4 @@
-const toggleBtn = document.querySelector('.navigation__toggle_button');
 const menu = document.querySelector('.navigation__menu');
-const icons = document.querySelector('.navigation__icons');
-
-const container = document.getElementById('container');
-
-toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    icons.classList.toggle('active');
-    container.classList.toggle('active');
-});
 
 fetch('http://yhjang.shop:3000/menus')
     .then(res => res.json())
