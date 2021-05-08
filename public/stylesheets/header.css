@@ -1,5 +1,6 @@
 :root {
     --text--color: #3388ff;
+    --unused--text--color: #ffbbff;
     --background--color: white;
     --accent--color: #d49466;
 }
@@ -47,12 +48,13 @@ div[class="sidebar"] {
 .navigation__menu li span {
     text-decoration: none;
     font-size: 1.3rem;
-    color: var(--text--color);
+    color: var(--unused--text--color);
     cursor: default;
 }
 
 .navigation__menu li span.active {
     cursor: pointer;
+    color: var(--text--color);
 }
 
 .navigation__menu li:hover {

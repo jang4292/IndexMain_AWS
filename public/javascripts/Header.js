@@ -13,15 +13,16 @@ fetch('http://yhjang.shop:3000/menus')
             div.setAttribute("id", `main_view ${title.toLowerCase()}`);
             div.style.display = 'none';
             span.innerText = title;
-            span.classList.toggle('active');
             container.appendChild(div);
             switch (title) {
                 case 'HOME': {
+                    span.classList.toggle('active');
                     $(div).load("../html/Home/home.html");
                     div.style.display = 'block';
                     break;
                 }
                 case 'AUDIO': {
+                    span.classList.toggle('active');
                     $(div).load("../html/AudioPlayer/audio_player.html");
                     break;
                 }
