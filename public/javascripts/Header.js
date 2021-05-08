@@ -1,14 +1,49 @@
 const menu = document.querySelector('.navigation__menu');
+const container = document.getElementById('container');
 
 fetch('http://yhjang.shop:3000/menus')
     .then(res => res.json())
     .then(data => {
         data.forEach(info => {
             const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = '#';
-            a.innerText = `${info.title}`;
-            li.appendChild(a);
+            const span = document.createElement('span');
+            const div = document.createElement('div');
+            const title = info.title;
+
+            div.setAttribute("id", `main_view ${title.toLowerCase()}`);
+            div.style.display = 'none';
+            span.innerText = title;
+            span.classList.toggle('active');
+            container.appendChild(div);
+            switch (title) {
+                case 'HOME': {
+                    $(div).load("../html/Home/home.html");
+                    div.style.display = 'block';
+                    break;
+                }
+                case 'AUDIO': {
+                    $(div).load("../html/AudioPlayer/audio_player.html");
+                    break;
+                }
+                default : {
+                }
+            }
+
+            span.addEventListener('click', (event) => {
+                const title = event.currentTarget.innerText;
+                const container = document.getElementById(`container`);
+
+                let length = container.children.length;
+                while(length--) {
+                    const child = container.children[length];
+                    child.style.display = 'none';
+                }
+
+                const div = document.getElementById(`main_view ${title.toLowerCase()}`);
+                div.style.display = 'block';
+            });
+
+            li.appendChild(span);
             menu.appendChild(li);
         });
     })
