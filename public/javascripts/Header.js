@@ -34,13 +34,16 @@ fetch('http://yhjang.shop:3000/menus')
                 const container = document.getElementById(`container`);
 
                 let length = container.children.length;
-                while(length--) {
+                while (length--) {
                     const child = container.children[length];
                     child.style.display = 'none';
                 }
 
                 const div = document.getElementById(`main_view ${title.toLowerCase()}`);
                 div.style.display = 'block';
+
+                const menuIcon = document.getElementById('menuicon');
+                menuIcon.checked = false;
             });
 
             li.appendChild(span);
