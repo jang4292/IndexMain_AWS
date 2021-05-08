@@ -1,0 +1,56 @@
+ul[id = "audio_lists_tabs"] {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul[id ="audio_lists_tabs"] li {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 10px
+}
+
+ul[id ="audio_lists_tabs"] li:hover {
+    background-color: var(--accent--color);
+}
+
+input[class = "audio_tap_list"] {
+    display: none;
+}
+
+input[class = "audio_tap_list"] + label {
+    border-radius: 30px;
+    transition: all .20s;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text--color);
+}
+
+#audio_controller {
+    width: 100%;
+    text-align: center;
+}
+
+#audio_controller ul {
+    width: 70%;
+    padding-left: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text--color);
+}
+
+#audio_controller #audio_play {
+    font-size: 4rem;
+}
+
+#audio_controller ul i {
+    color: var(--accent--color);
+    padding: 1rem
+}

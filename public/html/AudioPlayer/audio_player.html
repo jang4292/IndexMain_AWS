@@ -1,3 +1,39 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/audio_player.css">
 </head>
+
+<ul id="audio_lists_tabs">
+    <li>
+        <input type="checkbox" id="audio_current_playlist" class="audio_tap_list">
+        <label for="audio_current_playlist">
+            Current Play List
+        </label>
+    </li>
+
+    <li>
+        <input type="checkbox" id="audio_all_list" class="audio_tap_list">
+        <label for="audio_all_list">
+            All List
+        </label>
+    </li>
+</ul>
+
+<div id="audio_list">
+
+</div>
+
+<div id="audio_information">
+
+</div>
+
+<div id="audio_progress">
+
+</div>
+
+<div id="audio_controller">
+    <ul>
+        <i class="fas fa-backward"></i>
+        <i class="far fa-play-circle" id="audio_play"></i>
+        <i class="fas fa-forward"></i>
+    </ul>
+</div>
