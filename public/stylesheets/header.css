@@ -21,6 +21,7 @@ a {
 .navigation__logo {
     font-size: 30px;
     color: var(--text--color);
+    cursor: default;
 }
 
 .navigation__logo i {
