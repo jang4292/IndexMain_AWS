@@ -1,32 +1,44 @@
-ul[id = "audio_lists_tabs"] {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding-left: 0;
+div[id="audio_lists"] {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
 }
 
-ul[id ="audio_lists_tabs"] li {
-    width: 50%;
-    height: auto;
-    text-align: center;
-    padding: 10px
-}
-
-ul[id ="audio_lists_tabs"] li:hover {
-    background-color: var(--accent--color);
-}
-
-input[class = "audio_tap_list"] {
+input[type="radio"] {
     display: none;
 }
 
-input[class = "audio_tap_list"] + label {
-    border-radius: 30px;
-    transition: all .20s;
-    padding: 10px;
-    font-size: 1.2rem;
+input[type="radio"] + label {
+    width: 50%;
+    padding: 1rem 0;
+    display: inline-block;
+    background-color: #ccc;
+    color: #999;
+    text-align: center;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: var(--text--color);
+    margin: 0 auto;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #aaa;
+    color: #000;
+    margin: 0;
+}
+
+.audio_contents_box {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    font-size: 100px;
+}
+
+input[id="audio_current_playlist"]:checked ~ .con01 {
+    display: block;
+}
+
+input[id="audio_all_list"]:checked ~ .con02 {
+    display: block;
 }
 
 #audio_controller {

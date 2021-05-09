@@ -2,25 +2,21 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/audio_player.css">
 </head>
 
-<ul id="audio_lists_tabs">
-    <li>
-        <input type="checkbox" id="audio_current_playlist" class="audio_tap_list">
+<div id="audio_lists">
+    <div>
+        <input type="radio" name="audio_tab" id="audio_current_playlist" class="audio_tab_list" checked>
         <label for="audio_current_playlist">
-            Current Play List
+            Current List
         </label>
-    </li>
-
-    <li>
-        <input type="checkbox" id="audio_all_list" class="audio_tap_list">
+        <input type="radio" name="audio_tab" id="audio_all_list" class="audio_tab_list">
         <label for="audio_all_list">
             All List
         </label>
-    </li>
-</ul>
-
-<div id="audio_list">
-
+        <div class="audio_contents_box con01">콘텐츠1</div>
+        <div class="audio_contents_box con02">콘텐츠2</div>
+    </div>
 </div>
+
 
 <div id="audio_information">
 
