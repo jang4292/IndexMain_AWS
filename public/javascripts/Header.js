@@ -30,22 +30,24 @@ fetch('http://yhjang.shop:3000/menus')
                 }
             }
 
-            span.addEventListener('click', (event) => {
-                const title = event.currentTarget.innerText;
-                const container = document.getElementById(`container`);
+            if (title === 'HOME' || title === 'AUDIO') {
+                span.addEventListener('click', (event) => {
+                    const title = event.currentTarget.innerText;
+                    const container = document.getElementById(`container`);
 
-                let length = container.children.length;
-                while (length--) {
-                    const child = container.children[length];
-                    child.style.display = 'none';
-                }
+                    let length = container.children.length;
+                    while (length--) {
+                        const child = container.children[length];
+                        child.style.display = 'none';
+                    }
 
-                const div = document.getElementById(`main_view ${title.toLowerCase()}`);
-                div.style.display = 'block';
+                    const div = document.getElementById(`main_view ${title.toLowerCase()}`);
+                    div.style.display = 'block';
 
-                const menuIcon = document.getElementById('menuicon');
-                menuIcon.checked = false;
-            });
+                    const menuIcon = document.getElementById('menuicon');
+                    menuIcon.checked = false;
+                });
+            }
 
             li.appendChild(span);
             menu.appendChild(li);

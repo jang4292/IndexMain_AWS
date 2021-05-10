@@ -30,7 +30,10 @@
 <div id="audio_controller">
     <ul>
         <i class="fas fa-backward"></i>
-        <i class="far fa-play-circle" id="audio_play"></i>
+        <input type="radio" name="audio_radio" id="audio_play_radio">
+        <input type="radio" name="audio_radio" id="audio_pause_radio" checked>
+        <label class="audio_play_pause_buttons" for="audio_play_radio"><i class="far fa-play-circle"></i></label>
+        <label class="audio_play_pause_buttons" for="audio_pause_radio"><i class="far fa-pause-circle"></i></label>
         <i class="fas fa-forward"></i>
     </ul>
 </div>

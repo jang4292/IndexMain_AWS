@@ -1,4 +1,4 @@
-const playButton = document.getElementById('audio_play');
+const playButtons = document.getElementsByClassName('audio_play_pause_buttons');
 const song = new Audio();
 let musicData;
 
@@ -11,11 +11,15 @@ fetch('http://yhjang.shop:3000/musics')
         console.log(' err : ' + err);
     });
 
-playButton.addEventListener('click', () => {
-    if (song.paused) {
-        if (!song.src) song.src = musicData[0].url;
-        song.play();
-    } else {
-        song.pause();
-    }
-});
+let length = playButtons.length;
+while (length--) {
+    const button = playButtons[length];
+    button.addEventListener('click', () => {
+        if (song.paused) {
+            if (!song.src) song.src = musicData[0].url;
+            song.play();
+        } else {
+            song.pause();
+        }
+    });
+}

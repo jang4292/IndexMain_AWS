@@ -27,6 +27,16 @@ input[type="radio"] {
     display: none;
 }
 
+label[class="audio_play_pause_buttons"] {
+    display: none;
+    font-size: 4rem;
+}
+
+input[id="audio_play_radio"]:checked ~ label[for="audio_pause_radio"],
+input[id="audio_pause_radio"]:checked ~ label[for="audio_play_radio"] {
+    display: block;
+}
+
 .audio_contents_box {
     width: 100%;
     margin: 0 auto;
@@ -57,10 +67,6 @@ input[id="audio_all_list"]:checked ~ .con2 {
     align-items: center;
     font-size: 2rem;
     color: var(--text--color);
-}
-
-#audio_controller #audio_play {
-    font-size: 4rem;
 }
 
 #audio_controller ul i {
