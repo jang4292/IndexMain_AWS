@@ -17,6 +17,12 @@ a {
     align-items: center;
     background-color: var(--background--color);
     padding: 8px 12px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navigation__logo {
