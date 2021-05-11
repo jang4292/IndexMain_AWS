@@ -118,4 +118,19 @@
     #profile-title {
         font-size: 1rem;
     }
+
+    .section .slide_list label {
+        padding: 0.5rem;
+        color: #000000;
+    }
+
+    .section .slide_list .left {
+        left: 0;
+        font-size: 3.5rem;
+    }
+
+    .section .slide_list .right {
+        right: 0;
+        font-size: 3.5rem;
+    }
 }
