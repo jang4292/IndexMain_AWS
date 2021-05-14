@@ -63,11 +63,6 @@ div[class="sidebar"] {
     color: var(--text--color);
 }
 
-.navigation__menu li:hover {
-    background-color: var(--accent--color);
-    border-radius: 4px;
-}
-
 .navigation__icons {
     list-style: none;
     display: flex;
