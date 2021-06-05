@@ -1,0 +1,23 @@
+#project-title {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (max-width: 1920px) {
+    #project-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #project-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #project-title {
+        font-size: 1rem;
+    }
+}

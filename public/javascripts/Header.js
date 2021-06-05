@@ -1,6 +1,8 @@
 const menu = document.querySelector('.navigation__menu');
 const container = document.getElementById('container');
 
+const ACTIVIED_MENU_LIST = ['HOME', 'AUDIO', 'PROJECT'];
+
 fetch('http://yhjang.shop:3000/menus')
     .then(res => res.json())
     .then(data => {
@@ -21,6 +23,11 @@ fetch('http://yhjang.shop:3000/menus')
                     div.style.display = 'block';
                     break;
                 }
+                case 'PROJECT': {
+                    span.classList.toggle('active');
+                    $(div).load("../html/Project/project.html");
+                    break;
+                }
                 case 'AUDIO': {
                     span.classList.toggle('active');
                     $(div).load("../html/AudioPlayer/audio_player.html");
@@ -30,7 +37,7 @@ fetch('http://yhjang.shop:3000/menus')
                 }
             }
 
-            if (title === 'HOME' || title === 'AUDIO') {
+            if (ACTIVIED_MENU_LIST.includes(title)) {
                 span.addEventListener('click', (event) => {
                     const title = event.currentTarget.innerText;
                     const container = document.getElementById(`container`);
