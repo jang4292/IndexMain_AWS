@@ -1,4 +1,4 @@
-fetch('http://yhjang.shop:3000/menus')
+fetch('http://yhjang.shop1:3000/menus')
     .then(res => res.json())
     .then(data => {
         data.forEach(info => {

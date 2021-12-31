@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#footer").load("./html/footer.html");
     $("#header").load("./html/header.html");
     //
-    // fetch('http://yhjang.shop:3000/menus')
+    // fetch('http://yhjang.shop1:3000/menus')
     //     .then(res => res.json())
     //     .then(data => {
     //         data.forEach(info => {
