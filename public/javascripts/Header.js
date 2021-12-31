@@ -3,7 +3,7 @@ const container = document.getElementById('container');
 
 const ACTIVIED_MENU_LIST = ['HOME', 'AUDIO', 'PROJECT'];
 
-fetch('http://yhjang.shop1:3000/menus')
+fetch('http://yhjang1.shop:3000/menus')
     .then(res => res.json())
     .then(data => {
         data.forEach(info => {

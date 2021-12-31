@@ -2,7 +2,7 @@ const playButtons = document.getElementsByClassName('audio_play_pause_buttons');
 const song = new Audio();
 let musicData;
 
-fetch('http://yhjang.shop1:3000/musics')
+fetch('http://yhjang1.shop:3000/musics')
     .then(res => res.json())
     .then(data => {
         musicData = data;
