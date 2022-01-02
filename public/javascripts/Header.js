@@ -3,9 +3,12 @@ const container = document.getElementById('container');
 
 const ACTIVIED_MENU_LIST = ['HOME', 'AUDIO', 'PROJECT'];
 
-fetch('http://yhjang1.shop:3000/menus')
+fetch('http://yhjang1.shop:3000/menus?type=legacyWebMenus')
     .then(res => res.json())
-    .then(data => {
+    .then(res => {
+        if(res.result !== 1) return;
+        
+        const data = res.data;
         data.forEach(info => {
             const li = document.createElement('li');
             const span = document.createElement('span');
@@ -31,6 +34,13 @@ fetch('http://yhjang1.shop:3000/menus')
                 case 'AUDIO': {
                     span.classList.toggle('active');
                     $(div).load("../html/AudioPlayer/audio_player.html");
+                    break;
+                }
+                case 'VUE INDEX': {
+                    span.classList.toggle('active');
+                    span.addEventListener('click', event => {
+                        location.href = "http://yhjang1.shop/vueIndex/";
+                    });
                     break;
                 }
                 default : {
